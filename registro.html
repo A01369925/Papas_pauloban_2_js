@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js_registro.js"></script>
+  </head>
+  <body bgcolor="#FFE82B"><center>
+    <br>
+    <p class="encabezado_02">Registro</p>
+    <p class="encabezado_03">Ingresa los datos de la sucursal o negocio en el que desees distribución de nuestra mercancía</p>
+    <table class="tabla-cont">
+      <tbody>
+        <form name="r_form">
+          <tr>
+            <td colspan="2" align="center"><b>Los datos marcados con <span style="color: red;">*</span> son obligatorios</b></td>
+          </tr>
+          <tr>
+            <td>Nombre del propietario</td>
+            <td><input name="nombre_p" type="text" class="campo" onclick="campo_nombre_p()"><span style="color: red;"> *</span></td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td><input name="tel" type="number" class="campo" onclick="campo_tel()"><span style="color: red;"> *</span></td>
+          </tr>
+          <tr>
+            <td>Dirección</td>
+            <td><textarea name="dir" rows="3" class="campo" onclick="campo_dir()"></textarea><span style="color: red;"> *</span></td>
+          </tr>
+          <tr>
+            <td>Nombre del negocio</td>
+            <td><input name="nombre_n" type="text" class="campo"></td>
+          </tr>
+          <tr>
+            <td>Horario</td>
+            <td><input name="hor" type="text" class="campo"></td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <table align="center">
+                <tr align="center">
+                  <td><input type="button" name="b1" id="boton_02" value="Enviar" onclick="ejecutar()"></td>
+                  <td><input type="reset" name="b2" id="boton_03" value="Borrar" onclick="borrar()"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </center></body>
+</html>
